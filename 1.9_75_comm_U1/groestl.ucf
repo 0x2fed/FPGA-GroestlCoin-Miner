@@ -1,0 +1,24 @@
+# Based on https://github.com/ngzhang/Icarus/blob/master/FPGA_project/Src/fpgaminer_top.ucf
+
+NET "clk" TNM_NET = "clk";
+
+# 75MHz clk (it may route better specifying a slightly slower clock)
+TIMESPEC TS_clk = PERIOD "clk" 75 MHZ HIGH 50 % INPUT_JITTER 7 ps;
+
+NET "osc_clk" LOC = J1 | IOSTANDARD = LVCMOS33;
+NET "osc_clk" PERIOD = 100 MHz;
+
+# serial port receive & transmit
+NET "RxD" LOC = D1 | IOSTANDARD = LVCMOS33;
+NET "TxD" LOC = B1 | IOSTANDARD = LVCMOS33;
+
+# TTL level serial port: ja3 = rxd, ja2 = txd
+NET "Ex_TxD" LOC = D22 | IOSTANDARD = LVCMOS33;
+NET "Ex_RxD" LOC = B22 | IOSTANDARD = LVCMOS33;
+
+NET "led[0]" LOC = B18 | IOSTANDARD = LVCMOS33;
+NET "led[1]" LOC = A17 | IOSTANDARD = LVCMOS33;
+NET "led[2]" LOC = A18 | IOSTANDARD = LVCMOS33;
+NET "led[3]" LOC = A16 | IOSTANDARD = LVCMOS33;
+
+

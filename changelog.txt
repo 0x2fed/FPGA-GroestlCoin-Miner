@@ -1,0 +1,47 @@
+
+*********************************************************
+v1.9 26/11/2016
+75 MHz - 5000kh\s - 10000kh\s board
+Idle=0.32A
+Mine=1.40A
+Volt=11.41V
+Power~16W
+0,625MH/W
+
+*********************************************************
+v1.4 03/11/2016
+70 MHz - 4666kh\s
+*********************************************************
+v1.2 14/10/2016
+[+] Fix error target_vw=>target
+[+] Test 60MHz - 4000kh\s
+*********************************************************
+v1.1 13/10/2016
+[+] add target 0,1
+
+yes
+reg 7584   4%
+lut 57870 63%
+120.220MHz
+
+reg 7585   4%
+lut 55686 60%
+sli 17524 76%
+44.146 MHz
+
+v1.0     02/05/2016
+[+] add parameter round constant metod
+[-] TODO target constant
+[-] TODO nonce=ffffffff
+
+20 MHz - 1333kh\s
+30 MHz - 2000kh\s
+50 MHz - 3333kh\s
+
+
+synthesis 120.220 MHz
+implement  31.885 MHz
+
+reg 7508
+lut 55580
+sli 18681
